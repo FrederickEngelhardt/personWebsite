@@ -1,24 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <h1>Portfolio</h1>
 
-    <!--TABLE OF CONTENTs -->
-    <ul>
-    <a href="index.html"><img src="images/bizDevLogo.png" width="50" height="50"></a>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="resume.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
+<head>
+  <meta charset="utf-8">
+  <title>Bizdev.us</title>
 
-    <!-- Projects -->
-    <h2>Guitar Equipment Demos</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/tGo4MSq_m7g" frameborder="0" allowfullscreen></iframe>
-    <h2>The Last Jedi Trailer</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/zB4I68XVPzQ" frameborder="0" allowfullscreen></iframe>
-  </body>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="./src/main.js"></script>
+  <!-- <link rel="icon" href="./favicon.ico?" type="image/x-icon"> -->
+</head>
+<body>
+  <nav class="fixed">
+    <div class="nav-wrapper grey darken-1">
+      <a href="#!" class="brand-logo">Bizdev</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="collapsible.html">About Us</a></li>
+        <li><a href="mobile.html">Resume</a></li>
+      </ul>
+      <ul class="side-nav white" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="collapsible.html">About Us</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="center">
+    <h1 id="welcome" class="">Welcome!</h1>
+  </div>
+  <div class="row cards"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l6">
+        <div class="card card-size">
+          <img src="./images/accentor.png">
+        </div>
+      </div>
+      <div class="col s12 m12 l6">
+        <div class="card card-size">
+          <img src="./images/jazzed.png">
+        </div>
+      </div>
+      <div class="col s12 m12 l6">
+        <div class="card card-size">
+          <img src="./images/interpret-it.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
