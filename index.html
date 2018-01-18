@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="fixed">
        <div class="nav-wrapper grey darken-1">
          <a href="#!" class="brand-logo">Bizdev</a>
          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -37,15 +37,43 @@
        </div>
      </nav>
   <div class="wrapper">
-    <div class="image-card">
+    <div class="image-card"></div>
+    <div class="row3 carousel">
+      <h2>Projects</h2>
+      <a class="carousel-item" href="#one!"><img src="./images/jazzed.png"></a>
+      <a class="carousel-item" href="#two!"><img src="./images/accentor.png"></a>
+      <a class="carousel-item" href="#three!"><img src="./images/interpret-it.png"></a>
     </div>
-    <div class="carousel">
-      <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
-      <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
-      <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
-      <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-      <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
-    </div>
+    <!-- Slideshow container -->
+<div class="row4 slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="./images/accentor.png" style="width:100%">
+    <div class="text">Accentor</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="./images/interpret-it.png" style="width:100%">
+    <div class="text">Interpret-It</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="./images/jazzed.png" style="width:100%">
+    <div class="text">Jazzed</div>
+  </div>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
   </div>
 </body>
 
