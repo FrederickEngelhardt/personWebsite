@@ -16,8 +16,6 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-
-
 /* index.html */
 
 .profile-img {
@@ -27,7 +25,14 @@ body {
 }
 .cards {
   width: 100%;
-  height: 200px;
+}
+
+.card {
+  border-radius: 20px;
+  opacity: .7;
+}
+.card:hover {
+  opacity: 1;
 }
 .card-size {
   max-width: 650px;
@@ -52,6 +57,12 @@ body {
       padding: 10px;
       font-size: 25px;
   }
+  .cards {
+      height: 10px;
+  }
+  .website-img {
+    height: 300px;
+  }
 }
 @media screen and (min-width: 480px) {
     .center {
@@ -60,21 +71,50 @@ body {
         width: 30%;
         padding: 10px;
     }
+    .cards {
+        height: 200px;
+    }
+    .website-img {
+      height: 500px;
+    }
+}
+.paragraph-row {
+  overflow-wrap: normal;
+  margin-top: -50px;
+}
+.website-img {
+  margin-top: -20px;
+}
+.site-btn {
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 #welcome {
     position: relative;
-    top: 100px;
     color: white;
     margin-top: 25px;
     background: #0074D9;
     opacity: .8;
+    border-radius: 50px;
     -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 5s; /* Firefox < 16 */
         -ms-animation: fadein 5s; /* Internet Explorer */
          -o-animation: fadein 5s; /* Opera < 12.1 */
             animation: fadein 5s;
 }
-
+#welcome.index {
+  top: 40px;
+}
+#welcome.projects {
+  top: 40px;
+}
+#margin-top {
+  margin-top: -125px;
+}
+#view-projects {
+  position: relative;
+  top: -10px;
+}
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: .8; }
