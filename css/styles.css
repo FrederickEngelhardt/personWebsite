@@ -23,7 +23,10 @@ h1 {
   text-decoration: underline;
 }
 /* index.html */
-
+.logo-link {
+  height: 40px;
+  width: 40px;
+}
 .paragraph-row {
   padding-left: 10px;
   padding-right: 10px;
