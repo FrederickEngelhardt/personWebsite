@@ -16,7 +16,18 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+p {
+  font-size: 16px;
+}
+h1 {
+  text-decoration: underline;
+}
 /* index.html */
+
+.paragraph-row {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 .profile-img {
   border-radius: 100px;
@@ -51,6 +62,9 @@ body {
   width: 100%;
 }
 @media screen and (max-width: 480px) {
+  p {
+    font-size: 20px;
+  }
   .center {
       margin: auto;
       width: 90%;
@@ -115,6 +129,15 @@ body {
   position: relative;
   top: -10px;
 }
+
+/* Projects.html */
+
+#scorcher-img {
+  max-width: 100%;
+}
+
+
+/* End of project HTML css */
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: .8; }
