@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %http://www.bizdev.us/index.html !-f
+RewriteCond %http://www.bizdev.us/index.html !-d
+RewriteCond %http://www.bizdev.us/projects.html !-f
+RewriteCond %http://www.bizdev.us/projects.html !-d
+RewriteRule ^(.*)\.html$ /$1 [L,R=301]
